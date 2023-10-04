@@ -16,48 +16,53 @@
             <!--TOP HEADER-->
                 <div id="top-header">
                     <div class="container">
-                        <ul class="header-top-left">
-                            <li>
-                                
-                                <a href="#">
-                                    <i class="fa fa-map-marker"></i>
-                                    " +021-95-51-84"
-                                </a>
-                                
-                            </li>
+                        <div class="header-links">
 
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-envelope-o"></i>
-                                    " email@email.com"
-
-                                </a>
+                            <ul class="header-top-left">
+                                <li>
+                                    
+                                    <a href="#">
+                                        <i class="fa fa-map-marker"></i>
+                                        " +021-95-51-84"
+                                    </a>
+                                    
                                 </li>
-                            
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-map-marker"></i>
-                                   " 1734 Stonecoal Road"
-
-                                </a>
-                            </li>
-                        </ul>
-
-                        <ul class="header-top-right">
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-dollar"></i>
-                                    " USD"
-                                </a>
-                                </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-user-o"></i>
-                                    "My account"
-                                </a>
+    
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-envelope-o"></i>
+                                        " email@email.com"
+    
+                                    </a>
+                                    </li>
                                 
-                            </li>
-                        </ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-map-marker"></i>
+                                       " 1734 Stonecoal Road"
+    
+                                    </a>
+                                </li>
+                            </ul>
+    
+                            <ul class="header-top-right">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-dollar"></i>
+                                        " USD"
+                                    </a>
+                                    </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-user-o"></i>
+                                        "My account"
+                                    </a>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+
+                       
                     </div>
                 </div>
             <!--/TOP HEADER-->
@@ -68,8 +73,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="header-logo">
-                                <a href="#">
-                                    <img src="images/logo.png" alt="">
+                                <a href="#" class="logo">
+                                    <img  src="images/logo.png" alt="">
                                 </a>
                             </div>
                             <div class="header-search">
@@ -79,7 +84,7 @@
                                         <option value="1">Categories 1</option>
                                         <option value="2">Categories 2</option>
                                     </select>
-                                    <input type="text" name="" id="input" placeholder="Search here">
+                                    <input type="text" name="" class="input" placeholder="Search here">
                                     <button class="search-btn">Search</button>
 
                                 </form>
@@ -108,15 +113,62 @@
 
                                         <div class="cart-dropdown">
                                             <div class="cart-list">
-                                                
+                                                <div class="product">
+                                                    <div class="product-image">
+                                                        <img src="images/product01.png" alt="">
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <h3 class="product-name">
+                                                            Apple MacBook Pro (Retina, 13", Mid 2014)
+                                                        </h3>
+                                                        <h4 class="product-price">
+                                                            <span class="qty">1x</span>
+                                                            $980.00
+                                                        </h4>
+                                                    </div>
+                                                    <button class="delete">
+                                                        <i class="fa fa-close"></i>
+                                                    </button>
+                                                </div>
 
+                                                <div class="product">
+                                                    <div class="product-image">
+                                                        <img src="images/product02.png" alt="">
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <h3 class="product-name">
+                                                            Superlux HD681 Headphones
+                                                        </h3>
+                                                        <h4 class="product-price">
+                                                            <span class="qty">3x</span>
+                                                            $980.00
+                                                        </h4>
+                                                    </div>
+                                                    <button class="delete">
+                                                        <i class="fa fa-close"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="cart-summary">
+                                                <small>3 Item(s) selected</small>
+                                                <h5>SUBTOTAL: $2940.00</h5>
+                                            </div>
+                                            <div class="cart-btns">
+                                               <a href="#">View Cart</a>
+                                               <a href="#">
+                                                Checkout
+                                                <i class="fa fa-arrow-circle-right">
+
+                                                </i>
+                                               </a>
                                             </div>
 
-                                            <div class="cart-summary"></div>
-                                            <div class="cart-btn"></div>
 
+                                        </div>
 
-                                         </div>
+                                            
+
+                                    </div>
 
 
 
@@ -126,8 +178,14 @@
 
                                     <!--/CART-->
 
-
-
+                                    <!-- Menu Toogle -->
+                                    <div class="menu-toggle">
+                                        <a href="#">
+                                            <i class="fa fa-bars"></i>
+                                            <span>Menu</span>
+                                        </a>
+                                    </div>
+                                    <!-- /Menu Toogle -->
 
 
                                 </div>
