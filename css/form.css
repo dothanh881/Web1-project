@@ -1,141 +1,132 @@
-body{
-  background-color: #A8A8A8;
-  font-family: 'Roboto', sans-serif;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.container{
-  /*border:1px solid white;*/
-  width: 600px;
-  height: 350px;
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  display: inline-flex; 
+body {
+  overflow-x:hidden;
 }
-.backbox{  
-  background-color: #404040;
-  width: 100%;
-  height: 80%;
-  position: absolute;
-  transform: translate(0,-50%);
-  top:50%;
-  display: inline-flex;
+.login-form{
+ margin-top: 70px;
+ margin-left: 70px;
 }
 
-.frontbox{
-  background-color: white;
+
+a{ text-decoration: none; color: #53585e; }
+
+ul{ padding: 0; margin: 0; list-style: none; }
+
+.login-form .form-bg, .col-form-description{
+	min-height: 100vh;
+}
+
+
+.login-form .form-container{
+  background-color: #15161D;
   border-radius: 20px;
-  height: 100%;
-  width: 50%;
-  z-index: 10;
-  position: absolute;
-  right:0;
-  margin-right: 3%;
-  margin-left: 3%;
-  transition: right .8s ease-in-out;
+  padding: 50px;
+  color: aliceblue;
 }
 
-.moving{
-  right:45%;
+.form-header .title{
+  font-size: 1.5 rem;
+  padding-top: 10px;
 }
 
-.loginMsg, .signupMsg{
-  width: 50%;
-  height: 100%;
-  font-size: 15px;
-  box-sizing: border-box;
-}
+.login-form .form-body .field{
 
-.loginMsg .title,
-.signupMsg .title{
-  font-weight: 300;
-  font-size: 23px;
-}
+    display: flex;
+}  
 
-.loginMsg p,
-.signupMsg p {
-  font-weight: 100;
-}
-
-.textcontent{
-  color:white;
-  margin-top:65px;
-  margin-left: 12%;
-}
-
-.loginMsg button,
-.signupMsg button {
-  background-color: #404040;
-  border: 2px solid white;
-  border-radius: 10px;
-  color:white;
-  font-size: 12px;
-  box-sizing: content-box;
-  font-weight: 300;
-  padding:10px;
-  margin-top: 20px;
-}
-
-/* front box content*/
-.login, .signup{
-  padding: 20px;
+.login-form .form-body .field span{
+  height: 45px;
+  width: 50px;
+  line-height: 45px;
   text-align: center;
+  color: #fff;
+  background: #ff0000;
+} 
+
+.login-form .form-body .field .form-control{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left:0;
+}
+.login-form .forgot-password{ float: right; }
+
+
+.form-body .field .form-control{
+  height: 45px;
 }
 
-.login h2,
-.signup h2 {
-  color: #35B729;
-  font-size:22px;
+.login-form .submit{
+    color: #fff;
+    width: 100%;
+    
 }
 
-.inputbox{
-  margin-top:30px; 
+.login-form .form-footer .title{
+	font-size: 2rem;
+  font-weight: 400;
 }
-.login input, 
-.signup input {
-  display: block;
-  width: 100%;
-  height: 40px;
-  background-color: #f2f2f2;
-  border: none;
-  margin-bottom:20px;
-  font-size: 12px;
+.login-form .form-footer .title{
+	display: flex;
+	justify-content: center;
 }
 
-.login button,
-.signup button{
-  background-color: #35B729;
-  border: none;
-  color:white;
-  font-size: 12px;
-  font-weight: 300;
-  box-sizing: content-box;
-  padding:10px;
-  border-radius: 10px;
-  width: 60px;
-  position: absolute;
-  right:30px;
-  bottom: 30px;
-  cursor: pointer;
+.login-form .form-footer .title:before, .login-form .form-footer .title:after{
+	  content: "";
+    flex-grow: 1;
+    background-color: #ccc;
+    height: 1px;
+    margin-top: 10px;
+}
+.login-form .form-footer .title:before{
+	margin-right: 5px;
+}
+.login-form .form-footer .title:after{
+	margin-left: 5px;
+}
+.social-network li{
+	  display: inline-block;
+    background-color: #4867aa;
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: 87px;
+    font-weight: 500px;
 }
 
-/* Fade In & Out*/
-.login p {
-  cursor: pointer;
-  color:#404040;
-  font-size:15px;
+
+.social-network li a{ color: #ffffff; display: block; }
+.social-network li.twitter{
+	background-color: #33ccff;
+}
+.social-network li.gmail{
+	background-color: #db4437;
+}
+.form-description{
+	  text-align: left;
+    padding-right: 100px;
+    padding-left: 50px;
+    margin-top: 50px;
+}
+.col-form-description{
+	  display: flex;
+    align-items: center;
 }
 
-.loginMsg, .signupMsg{
-  /*opacity: 1;*/
-  transition: opacity .8s ease-in-out;
-}
-
-.visibility{
-  opacity: 0;
-}
-
-.hide{
-  display: none;
+/*Chỉnh responsive*/
+@media screen and (max-width: 480px){
+	.login-form .form-bg, .form-description{
+		padding: 15px;
+	}
+	.login-form .form-bg, .col-form-description{
+		min-height:100%;
+	}
+	.form-description{
+		text-align: center;
+	}
+	.login-form .form-bg{
+		order: 1;
+	}
 }
